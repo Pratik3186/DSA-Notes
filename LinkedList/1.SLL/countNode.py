@@ -22,4 +22,3 @@ head.next.next.next = Node(40)
 count = Node.countNode(head)
 print(count)
 Node.traverse(head)
-    
