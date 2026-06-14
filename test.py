@@ -1,7 +1,4 @@
-a = 5
-b = 10
-
-a = b
-print(a)
-b= a
-print(b)
+s = 'abciiidef'
+k=3
+for ch in s[:k]:
+    print(ch)

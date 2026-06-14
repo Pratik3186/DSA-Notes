@@ -14,7 +14,8 @@ def fixed_window(arr, k):
 
     return ans
 
-arr = [2, 1, 5, 1, 3, 2]
+# arr = [2, 1, 5, 1, 3, 2]
+arr = [1,2,3,4,5,6,7]
 k = 3
 
 print(fixed_window(arr, k))
