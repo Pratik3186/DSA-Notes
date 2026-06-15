@@ -1,4 +1,2 @@
-s = 'abciiidef'
-k=3
-for ch in s[:k]:
-    print(ch)
+p = 'abc'
+print(len(p))
