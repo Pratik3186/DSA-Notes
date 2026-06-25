@@ -1,0 +1,66 @@
+1. classes = 'A class is a blueprint or template for creating objects. It defines what attributes (data) and methods (functions) the objects will have.'
+
+class Dog:
+    species = "Canine"  # class attribute (shared by all objects)
+
+    def bark(self):
+        print("Woof!")
+
+2. object = 'Object is an instance of the class,An object is an actual instance created from a class. You can create multiple objects from the same class, each with their own data.'
+
+dog1 = Dog()   # object 1
+dog2 = Dog()   # object 2
+
+dog1.bark()    # Woof!
+dog2.bark()    # Woof!
+
+3. Constructor = '''A constructor is a special method that runs automatically when an object is created. In Python it's always named __init__. It's used to set up initial values (attributes) for the object.'''
+
+class Dog:
+    def __init__(self, name, age):   # constructor
+        self.name = name             # instance attribute
+        self.age = age
+
+dog1 = Dog("Bruno", 3)   # __init__ runs here automatically
+dog2 = Dog("Max", 5)
+
+print(dog1.name)   # Bruno
+print(dog2.age)    # 5
+
+What is self?
+self refers to the current object being created or used. It's how Python knows which object's data to access.
+
+
+Put it all together,
+class BankAccount:
+    bank = "SBI"  # class attribute
+
+    def __init__(self, owner, balance):   # constructor
+        self.owner = owner                # instance attributes
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Deposited ₹{amount}. New balance: ₹{self.balance}")
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient funds!")
+        else:
+            self.balance -= amount
+            print(f"Withdrew ₹{amount}. New balance: ₹{self.balance}")
+
+# Creating objects
+acc1 = BankAccount("Pratik", 5000)
+acc2 = BankAccount("Rohit", 12000)
+
+acc1.deposit(2000)    # Deposited ₹2000. New balance: ₹7000
+acc2.withdraw(500)    # Withdrew ₹500. New balance: ₹11500
+
+
+
+
+# syntax to create an object 
+# objectname = classname()
+L = list()
+print(L)
