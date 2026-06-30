@@ -1,3 +1,4 @@
 class Solution:
     @staticmethod
-    def mergeTwoarray()
+    def mergeTwoarray():
+        pass
