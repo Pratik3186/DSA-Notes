@@ -1,4 +1,5 @@
 class Node:
+    # @staticmethod
     def __init__(self,data):
         self.data = data
         self.next = None
